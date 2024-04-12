@@ -52,3 +52,23 @@ node index.js
 ```bash
 node mintToken.js
 ```
+
+## Wallet Addresses File
+
+The `wallet_addresses.txt` file should contain the wallet addresses in the either of the following format:
+
+```
+wallet_address_1
+wallet_address_2
+wallet_address_3
+wallet_address_n
+```
+
+or
+
+```
+wallet_address_1,1
+wallet_address_2,0.2
+wallet_address_3,3
+wallet_address_n,n
+```
