@@ -15,7 +15,7 @@ Solana Token transfer distribution to multiple wallets in a single transaction.
 - dotenv
 - fs
 
-## Installion
+## Installation
 
 1. Clone this repository
 
