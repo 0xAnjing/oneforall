@@ -1,0 +1,11 @@
+Use either format:
+
+1/ one line per wallet
+Wallet 1
+Wallet 2
+Wallet 3
+
+2/ one line, wallet and amount
+Wallet 1, 0.1
+Wallet 2, 0.2
+Wallet 3, 0.3
