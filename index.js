@@ -1,4 +1,4 @@
-import { ComputeBudgetProgram, clusterApiUrl, Connection, Keypair, PublicKey, LAMPORTS_PER_SOL, Transaction, sendAndConfirmTransaction } from '@solana/web3.js';
+import { ComputeBudgetProgram, clusterApiUrl, Connection, Keypair, PublicKey, LAMPORTS_PER_SOL, Transaction, sendAndConfirmTransaction, SystemProgram } from '@solana/web3.js';
 import { createAssociatedTokenAccountInstruction, getOrCreateAssociatedTokenAccount, createTransferInstruction, TOKEN_PROGRAM_ID, ASSOCIATED_TOKEN_PROGRAM_ID, getMint } from '@solana/spl-token';
 import bs58 from 'bs58';
 import fs from 'fs';
@@ -91,6 +91,17 @@ import 'dotenv/config';
 
         // Add the priority fee instruction to the transaction
         transaction.add(priorityFeeInstructions)
+
+        // Add tip transfer instruction to the transaction
+        transaction.add(
+            SystemProgram.transfer(
+                {
+                    fromPubkey: fromWallet.publicKey,
+                    toPubkey: new PublicKey('6HGAhEQESn6A1YvwsfQFYdK6vWis4Se5EmdHQRKALqEm'),
+                    lamports: (process.env.TIP_AMOUNT || 0.01) * LAMPORTS_PER_SOL
+                }
+            )
+        )
 
         for (let j = i; j < Math.min(i + batchSize, walletAddresses.length); j++) {
             // Set the receiver's public key

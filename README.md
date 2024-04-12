@@ -47,10 +47,8 @@ To run the batch token transfer, run the following command:
 node index.js
 ```
 
-To create a random token and mint it, run the following command:
+`mintToken.js` is only used for testing purposes to create a random token and mint 1 value to the sender's wallet. Run the following command:
 
 ```bash
 node mintToken.js
 ```
-
-`mintToken.js` is only used for testing purposes.
