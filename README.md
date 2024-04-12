@@ -72,3 +72,13 @@ wallet_address_2,0.2
 wallet_address_3,3
 wallet_address_n,n
 ```
+
+## Transfer Type
+
+### random
+
+The `random` transfer type will transfer a random amount of tokens to each wallet address from a range. Set the `MIN_AMOUNT` and `MAX_AMOUNT` in the `.env` file to set the range. Default is 0.01 to 0.1
+
+### setAmount
+
+The `setAmount` transfer type will require the amount to be set in the `wallet_addresses.txt` file
