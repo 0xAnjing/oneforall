@@ -20,7 +20,7 @@ Solana Token transfer distribution to multiple wallets in a single transaction.
 1. Clone this repository
 
 ```bash
-git clone xxx
+git clone https://github.com/0xAnjing/oneforall.git
 ```
 
 2. Install the dependencies
