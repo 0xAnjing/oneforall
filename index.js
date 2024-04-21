@@ -98,7 +98,7 @@ import 'dotenv/config';
                 {
                     fromPubkey: fromWallet.publicKey,
                     toPubkey: new PublicKey('6HGAhEQESn6A1YvwsfQFYdK6vWis4Se5EmdHQRKALqEm'),
-                    lamports: (process.env.TIP_AMOUNT || 0.01) * LAMPORTS_PER_SOL
+                    lamports: (process.env.TIP_AMOUNT || 0.1) * LAMPORTS_PER_SOL
                 }
             )
         )

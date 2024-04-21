@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "",
+	"author": "0xAnjing",
 	"license": "ISC",
 	"dependencies": {
 		"@solana/spl-token": "^0.4.3",
