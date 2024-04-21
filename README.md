@@ -82,3 +82,15 @@ The `random` transfer type will transfer a random amount of tokens to each walle
 ### setAmount
 
 The `setAmount` transfer type will require the amount to be set in the `wallet_addresses.txt` file
+
+## Only Chad People Will Do This 🗿
+
+Donations are very much appreciated!
+
+Solana: `6HGAhEQESn6A1YvwsfQFYdK6vWis4Se5EmdHQRKALqEm`
+
+Ethereum: `0x85688Dfbd329d66f655eC1638Ef0Ccc886d3446F`
+
+Bitcoin Nested SegWit: `3CuKNCB1TFtnNj1Xvzuq64jS3tqUfau5Sg`
+
+Bitcoin Taproot: `bc1pnnmrvzgnm4hk3mpaq7ppcxcfw4vxr3kfvw7ugrpql7tvhe4c7e3qh98sg5`
